@@ -22,4 +22,47 @@ The proliferation of misinformation necessitates robust yet computationally effi
 
 ## Code 
 
-<p><i>The code will be public once the paper is published.</i></p>
+### Prerequisites
+
+#### Dataset 
+
+Create a folder named "dataset" and place it in root directory.
+
+Download the datasets from https://github.com/Nicozwy/CofCED and place them in the directory
+
+
+### Setup 
+
+#### Using UV (Preferred)
+
+```
+uv venv venv --python 3.10
+
+source venv/bin/activate
+
+uv pip install torch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 --extra-index-url https://download.pytorch.org/whl/cu118
+
+uv pip install faiss-gpu-cu12
+
+uv pip install -r requirements.txt
+```
+
+
+#### Using Conda
+
+```
+conda create --prefix venv python=3.10
+
+conda activate venv/ 
+
+conda install pytorch==2.5.0 torchvision==0.20.0 torchaudio==2.5.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+
+conda install faiss-gpu -c conda-forge
+
+pip install -r requirements.txt
+```
+
+## How to run 
+
+`python main.py`
+

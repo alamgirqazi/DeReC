@@ -1,0 +1,13 @@
+accelerate==1.1.1
+datasets==3.1.0
+numpy==1.26.4
+scikit-learn==1.5.2
+scipy==1.12.0
+transformers== 4.48.0
+tqdm
+sentence-transformers
+tiktoken
+protobuf
+einops
+sentencepiece
+bitsandbytes
